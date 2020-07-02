@@ -67,9 +67,7 @@ body{
     visibility: hidden;
 }
 
-.todo-list .do .btn{
-    visibility: hidden;
-}
+
 
 .todo-list .do label{
     position: relative;
@@ -110,11 +108,11 @@ body{
     width: 5px;
 }
 
-.todo-list .do label .btn .fa-check{
+.todo-list .do label  .fa-check{
     position: absolute;
-    left: .9em;
+    left: .7em;
     /*right: .7em;*/
-    top: .65em;
+    top: .25em;
     font-size: 1.7em;
     color: #e11c3e;
     opacity: 0;
@@ -122,7 +120,7 @@ body{
    
 }
 
-.todo-list .do input[type=checkbox]:checked +label .btn .fa-check{
+.todo-list .do input[type=checkbox]:checked +label  .fa-check{
     opacity: 1;
     visibility: visible;
 }
@@ -150,6 +148,20 @@ body{
 
 .todo-list .do input[type=checkbox]:checked +label .label::after{
     right: 0;
+}
+
+.todo-list .do label a{
+    left: 100%;
+    text-decoration: none;
+    color: #e11c3e;
+
+}
+
+.todo-list .do label a:hover{
+    text-decoration: none;
+    background-color: #e11c3e;
+    color: #ffffff;
+    
 }
 
 
