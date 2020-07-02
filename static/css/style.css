@@ -78,6 +78,21 @@ body{
     transition: .3s ease-in-out;
 }
 
+.todo-list .error{
+    position: relative;
+    display: block;
+    padding: .75em 1em;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+.todo-list h4{
+    color: #e11c3e;
+    text-align: center;
+    
+}
+
 .todo-list .do label:hover{
     transform: translateX(-1em);
 }
