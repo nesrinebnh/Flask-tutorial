@@ -3,6 +3,8 @@ from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+#you may have problem of refresh execute CTRL+SHIFT+R
+
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
@@ -18,7 +20,7 @@ class Todo(db.Model):
         return '<Task %r>' %self.id
 
         
-@app.route('/')
+@app.route('/', methods =['POST','GET'])
 
 def index():
     return render_template('index.html')

@@ -1,8 +1,44 @@
 {% extends 'base.html' %}
 {% block head %} 
+<title>Task Master</title>
 {% endblock %}
 
 {% block body %}
-<h1>Template example</h1>
+<section class="todo-list">
+    <header>My todo list</header>
+    <div class="do">
+        <input type="checkbox" id="do1">
+        <label for="do1">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <span class="label"> Morning run</span>
+        </label>
+    </div>
+    <div class="do">
+        <input type="checkbox" id="do2">
+        <label for="do2">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <span class="label">Buy a milk</span>
+        </label>
+    </div>
+    <div class="do">
+        <input type="checkbox" id="do3">
+        <label for="do3">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <span class="label"> finish client work </span>
+        </label>
+    </div>
+    <div class="do">
+        <input type="checkbox" id="do4">
+        <label for="do4">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <span class="label"> call my mom  </span>
+        </label>
+    </div>
+    <footer></footer>
 
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+</section>
 {% endblock %}
